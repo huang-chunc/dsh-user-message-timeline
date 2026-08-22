@@ -1,0 +1,4 @@
+# dsh-user-message-timeline bundle patch
+- insert:
+    - id: user-message-timeline
+      name: 'dsh-user-message-timeline'
