@@ -1,3 +1,7 @@
 node_modules
 lib/*.map
 .DS_Store
+*.tgz
+# harness agent 本地记忆，不提交
+AGENTS.md
+GITHUB_小白手册.md
