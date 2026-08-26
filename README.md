@@ -16,19 +16,11 @@
 
 **动图**
 
-- 浅色完整链路：悬停漏斗放大 → 气泡 240px 预览 → 点击跳转 → 拖拽 Scrub HUD
+![浅色完整链路](docs/light.gif)
 
-<video src="docs/浅色模式.mp4" controls muted loop width="800"></video>
+![深色完整链路](docs/dark.gif)
 
-- 深色完整链路（同上）
-
-<video src="docs/深色模式.mp4" controls muted loop width="800"></video>
-
-- 设置开关与左右切换
-
-<video src="docs/设置与切换左右边.mp4" controls muted loop width="800"></video>
-
-> 若视频未自动播放，请直接打开 `docs/` 下对应 `.mp4`。
+![设置开关与左右切换](docs/settings.gif)
 
 ## 功能
 
