@@ -1,28 +1,27 @@
 # dsh-user-message-timeline
 
-<p align="center"><strong>对话列悬浮药丸导轨，一套开箱即用的完整时间线</strong></p>
+<p align="center"><strong>在对话列内侧，为每一条用户消息点亮一颗药丸</strong></p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/dsh-user-message-timeline"><img src="https://img.shields.io/npm/v/dsh-user-message-timeline?label=npm&color=CB3837" alt="npm"></a>
   <a href="https://www.npmjs.com/package/dsh-user-message-timeline"><img src="https://img.shields.io/npm/dm/dsh-user-message-timeline?label=downloads" alt="downloads"></a>
-  <img src="https://img.shields.io/badge/CI-passing-brightgreen" alt="CI">
+  <a href="https://github.com/huang-chunc/dsh-user-message-timeline/actions"><img src="https://img.shields.io/badge/CI-passing-brightgreen" alt="CI"></a>
   <a href="https://github.com/huang-chunc/dsh-user-message-timeline/stargazers"><img src="https://img.shields.io/github/stars/huang-chunc/dsh-user-message-timeline?style=social" alt="Stars"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow" alt="License"></a>
-  <a href="https://github.com/huang-chunc/dsh-user-message-timeline"><img src="https://img.shields.io/badge/dshfind-精选推荐-blue" alt="dshfind"></a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/DSH-0.1.1--rc.2-blue" alt="DSH">
-  <img src="https://img.shields.io/badge/插件生态-topic%20dsh--better--sidebar-blue" alt="topic">
+  <a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-0.1.1--rc.2-blue" alt="DSH"></a>
+  <a href="https://github.com/topics/dsh-user-message-timeline"><img src="https://img.shields.io/badge/插件生态-topic%20dsh--user--message--timeline-blue" alt="topic"></a>
 </p>
 
 <p align="center">
-  DSH User Message Timeline — 对话内悬浮药丸导轨，支持预览、跳转、拖拽与分页<br/>
-  悬浮在对话列内侧，120fps 跟手，视口可滚动，设置-插件-插件配置可切换左右贴边
+  DSH User Message Timeline — 对话内悬浮药丸导轨，悬停预览、拖拽跳转、分页加载<br/>
+  轻量时间线，悬停即预览、点击即跳转，视口可滚动，左右贴边一键切换
 </p>
 
 <p align="center">
-  <a href="README.md">中文</a> · <a href="README.md">English</a>
+  <a href="./README.md"><b>中文</b></a> · <a href="./README_EN.md">English</a>
 </p>
 
 ---
@@ -43,7 +42,7 @@
 | ![设置](docs/settings.gif) |
 | 开关关闭隐藏 · 左右贴边（右侧仅适配 dsh-better-sidebar） |
 
-> 动图为 15fps / 128 色压缩预览，原画质见 [`浅色`](https://github.com/huang-chunc/dsh-user-message-timeline/raw/main/docs/浅色模式.mp4) · [`深色`](https://github.com/huang-chunc/dsh-user-message-timeline/raw/main/docs/深色模式.mp4) · [`设置`](https://github.com/huang-chunc/dsh-user-message-timeline/raw/main/docs/设置与切换左右边.mp4) 的 `.mp4` 原片。
+> 动图为 15fps / 128 色压缩预览，完整演示可看 [B站演示（待补充）](https://www.bilibili.com/)（或直接看 `docs/` 下原片）。
 
 ## 功能
 
@@ -59,34 +58,38 @@
 
 ## 安装
 
+**前置**：已装好 DSH（`dsh web` 能正常运行），Node.js ≥ 20。
+
+**支持的 DSH 版本**：
+<a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-0.1.1--rc.2-blue" alt="DSH"></a>
+
 ```sh
 dsh plugin --profile web add dsh-user-message-timeline
-# 或本地
-dsh plugin --profile web add file:~/dsh-user-message-timeline
 ```
 
-重启 `dsh web` 后硬刷新 `http://127.0.0.1:3080`。
+装完**硬刷新浏览器**（`Cmd/Ctrl+Shift+R`）即可看到导轨（DSH 对 client 改动热加载，无需重启）。
 
-## 使用
-
-- **开关**：设置 → 插件 → 插件配置 → “用户消息时间线” 卡片，关闭后隐藏所有药丸与预览。
-- **左右贴边**：同卡片内切换“左侧·贴近左栏 / 右侧·贴近右栏”，保存后立即生效并持久化。右侧模式自动避让已安装的右侧边栏扩展（目前仅适配 `dsh-better-sidebar`，其它插件兼容情况未知）。
-- **兼容**：DSH `>=0.1.1-rc.2`，`React ^18.2.0`，`cordis ^4.0.1`。
-
-## 开发
+<details>
+<summary><b>更新</b></summary>
 
 ```sh
-# 修改 lib/client.js 后重新安装
-dsh plugin --profile web add file:~/dsh-user-message-timeline
-# 或先移除再添加以强制重拷
-dsh plugin --profile web remove dsh-user-message-timeline
-dsh plugin --profile web add file:~/dsh-user-message-timeline
+dsh plugin --profile web add dsh-user-message-timeline
 ```
 
-**排障**
-- `Lockfile failed supply-chain policy`：更新 `~/.dsh/profiles/web/pnpm-workspace.yaml` 的 `minimumReleaseAgeExclude`
-- `file: 旧代码`：同版本 `pnpm file:` 缓存，需 `remove && add` 或 bump 版本
-- 调试：`localStorage.setItem('umtl:debug','1')` 后看控制台 `[umtl]` 日志，`copy(__UMTL__.logs.join("\n"))`
+改完**硬刷新浏览器**即可。
+
+</details>
+
+<details>
+<summary><b>常见问题</b></summary>
+
+| 现象 | 原因与解决 |
+|---|---|
+| 报 `minimum release age` | 装的版本发布不足 24 小时，等 24h 或在 `~/.dsh/profiles/web/pnpm-workspace.yaml` 加白名单 |
+| 报 `file: 旧代码` | 同版本 `pnpm file:` 缓存，`dsh plugin --profile web remove dsh-user-message-timeline && dsh plugin --profile web add file:~/dsh-user-message-timeline` |
+| 调试 | `localStorage.setItem('umtl:debug','1')` 后看控制台 `[umtl]` 日志 |
+
+</details>
 
 ## 更新日志
 
