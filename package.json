@@ -1,6 +1,6 @@
 {
   "name": "dsh-user-message-timeline",
-  "version": "0.1.10",
+  "version": "0.2.0",
   "description": "DSH User Message Timeline - 对话内悬浮药丸导轨，支持预览、跳转、拖拽与分页",
   "type": "module",
   "main": "lib/index.js",
@@ -51,6 +51,8 @@
   ],
   "peerDependencies": {
     "@deepseek-ai/cordis": "^4.0.1",
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "@deepseek-ai/schemastery": "^1.2.1",
+    "@deepseek-ai/dsh-settings": "^0.1.1-rc.2"
   }
 }
