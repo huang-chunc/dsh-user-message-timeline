@@ -42,7 +42,7 @@
 | ![settings](docs/settings.gif) |
 | Toggle to hide · left/right (right only adapts to dsh-better-sidebar) |
 
-> GIFs are 15fps / 128-color previews. Full demo: [Bilibili (to be added)](https://www.bilibili.com/) or raw files in `docs/`.
+> GIFs are 15fps / 128-color previews. Full demo: [Light](https://www.bilibili.com/video/BV1FR896cEwY?t=9.0) · [Dark](https://www.bilibili.com/video/BV1zR896FEY8?t=2.1) or raw files in `docs/`.
 
 ## Features
 

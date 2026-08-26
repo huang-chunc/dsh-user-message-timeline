@@ -42,7 +42,7 @@
 | ![设置](docs/settings.gif) |
 | 开关关闭隐藏 · 左右贴边（右侧仅适配 dsh-better-sidebar） |
 
-> 动图为 15fps / 128 色压缩预览，完整演示可看 [B站演示（待补充）](https://www.bilibili.com/)（或直接看 `docs/` 下原片）。
+> 动图为 15fps / 128 色压缩预览，完整演示：[浅色](https://www.bilibili.com/video/BV1FR896cEwY?t=9.0) · [深色](https://www.bilibili.com/video/BV1zR896FEY8?t=2.1)（或直接看 `docs/` 下原片）。
 
 ## 功能
 
