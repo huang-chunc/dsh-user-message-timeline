@@ -68,6 +68,14 @@ dsh plugin --profile web add dsh-user-message-timeline
 
 Hard refresh browser (`Cmd/Ctrl+Shift+R`) to see the rail.
 
+**Option 2: Let DSH install it** — send this prompt to any DSH session:
+
+```text
+Please install the dsh-user-message-timeline plugin (floating pill rail), steps:
+1. Run dsh plugin --profile web add dsh-user-message-timeline
+2. Then remind me to hard refresh the browser (Cmd/Ctrl+Shift+R)
+```
+
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) and [Releases](https://github.com/huang-chunc/dsh-user-message-timeline/releases).
