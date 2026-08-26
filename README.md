@@ -69,6 +69,14 @@ dsh plugin --profile web add dsh-user-message-timeline
 
 装完**硬刷新浏览器**（`Cmd/Ctrl+Shift+R`）即可看到导轨（DSH 对 client 改动热加载，无需重启）。
 
+**方式二：让 DSH 自己装**——把下面这段提示词发给任意一个 DSH 会话：
+
+```text
+帮我安装 dsh-user-message-timeline 插件（对话列悬浮药丸导轨），步骤：
+1. 执行 dsh plugin --profile web add dsh-user-message-timeline
+2. 完成后提醒我硬刷新浏览器（Cmd/Ctrl+Shift+R）
+```
+
 <details>
 <summary><b>更新</b></summary>
 
