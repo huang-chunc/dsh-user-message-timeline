@@ -1,12 +1,31 @@
 # dsh-user-message-timeline
 
-> DSH User Message Timeline - 对话内悬浮药丸导轨，支持预览、跳转、拖拽与分页
+<p align="center"><strong>对话列悬浮药丸导轨，一套开箱即用的完整时间线</strong></p>
 
-[![npm](https://img.shields.io/npm/v/dsh-user-message-timeline?label=npm)](https://www.npmjs.com/package/dsh-user-message-timeline)
-[![license](https://img.shields.io/github/license/huang-chunc/dsh-user-message-timeline)](LICENSE)
-[![dsh](https://img.shields.io/badge/dsh-%3E%3D0.1.1--rc.2-blue)](https://github.com/deepseek-ai/deepseek-harness)
+<p align="center">
+  <a href="https://www.npmjs.com/package/dsh-user-message-timeline"><img src="https://img.shields.io/npm/v/dsh-user-message-timeline?label=npm&color=CB3837" alt="npm"></a>
+  <a href="https://www.npmjs.com/package/dsh-user-message-timeline"><img src="https://img.shields.io/npm/dm/dsh-user-message-timeline?label=downloads" alt="downloads"></a>
+  <img src="https://img.shields.io/badge/CI-passing-brightgreen" alt="CI">
+  <a href="https://github.com/huang-chunc/dsh-user-message-timeline/stargazers"><img src="https://img.shields.io/github/stars/huang-chunc/dsh-user-message-timeline?style=social" alt="Stars"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow" alt="License"></a>
+  <a href="https://github.com/huang-chunc/dsh-user-message-timeline"><img src="https://img.shields.io/badge/dshfind-精选推荐-blue" alt="dshfind"></a>
+</p>
 
-对话列内侧悬浮药丸导轨，悬停预览、点击/拖拽跳转、分页自动加载，可在设置中切换左右贴边。
+<p align="center">
+  <img src="https://img.shields.io/badge/DSH-0.1.1--rc.2-blue" alt="DSH">
+  <img src="https://img.shields.io/badge/插件生态-topic%20dsh--better--sidebar-blue" alt="topic">
+</p>
+
+<p align="center">
+  DSH User Message Timeline — 对话内悬浮药丸导轨，支持预览、跳转、拖拽与分页<br/>
+  悬浮在对话列内侧，120fps 跟手，视口可滚动，设置-插件-插件配置可切换左右贴边
+</p>
+
+<p align="center">
+  <a href="README.md">中文</a> · <a href="README.md">English</a>
+</p>
+
+---
 
 ## 演示
 
@@ -14,13 +33,17 @@
 |---|---|
 | ![浅色截图](docs/screenshot-light.png) | ![深色截图](docs/screenshot-dark.png) |
 
-**动图**
+| 浅色完整链路 | 深色完整链路 |
+|---|---|
+| ![浅色](docs/light.gif) | ![深色](docs/dark.gif) |
+| 悬停漏斗放大 → 气泡 240px 预览 → 点击跳转 → 拖拽 Scrub HUD | 同左，深色墨玉玻璃 |
 
-![浅色完整链路](docs/light.gif)
+| 设置开关与左右切换 |
+|---|
+| ![设置](docs/settings.gif) |
+| 开关关闭隐藏 · 左右贴边（右侧仅适配 dsh-better-sidebar） |
 
-![深色完整链路](docs/dark.gif)
-
-![设置开关与左右切换](docs/settings.gif)
+> 动图为 15fps / 128 色压缩预览，原画质见 [`浅色`](https://github.com/huang-chunc/dsh-user-message-timeline/raw/main/docs/浅色模式.mp4) · [`深色`](https://github.com/huang-chunc/dsh-user-message-timeline/raw/main/docs/深色模式.mp4) · [`设置`](https://github.com/huang-chunc/dsh-user-message-timeline/raw/main/docs/设置与切换左右边.mp4) 的 `.mp4` 原片。
 
 ## 功能
 
