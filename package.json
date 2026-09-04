@@ -1,6 +1,6 @@
 {
   "name": "dsh-user-message-timeline",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "DSH User Message Timeline - 对话内悬浮药丸导轨，支持预览、跳转、拖拽与分页",
   "type": "module",
   "main": "lib/index.js",
