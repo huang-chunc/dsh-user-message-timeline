@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-0.1.1--rc.2-blue" alt="DSH"></a>
+  <a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-0.1.7--rc.2-blue" alt="DSH"></a>
   <a href="https://github.com/topics/dsh-user-message-timeline"><img src="https://img.shields.io/badge/插件生态-topic%20dsh--user--message--timeline-blue" alt="topic"></a>
 </p>
 
@@ -54,14 +54,14 @@
 | 分页头丸加载 | 顶部 `is-older` 空心脉冲，点击循环 `加载更多` 20 次，`HUD/tooltip · 还有更早` |
 | 视口可滚动 | ≤16 颗一屏精致，>16 颗导轨内 `max-height 386px` 可滚，`mask` 淡化 |
 | 丝滑体验 | 侧边栏推式 120fps `ResizeObserver+rAF`，`prefers-reduced-motion` 适配 |
-| 偏好设置 | 设置 → 插件 → 插件配置 卡片：开关与左右位置，深浅主题自适应（白底黑点/黑底灰点） |
+| 偏好设置 | 侧边栏「插件」→ `dsh-user-message-timeline` 卡片：开关与左右位置，深浅主题自适应（白底黑点/黑底灰点） |
 
 ## 安装
 
 **前置**：已装好 DSH（`dsh web` 能正常运行），Node.js ≥ 20。
 
 **支持的 DSH 版本**：
-<a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-0.1.1--rc.2-blue" alt="DSH"></a>
+<a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-0.1.7--rc.2-blue" alt="DSH"></a>
 
 ```sh
 dsh plugin --profile web add dsh-user-message-timeline
