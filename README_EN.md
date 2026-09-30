@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-0.1.7--rc.2-blue" alt="DSH"></a>
+  <a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-≥0.1.7-blue" alt="DSH"></a>
   <a href="https://github.com/topics/dsh-user-message-timeline"><img src="https://img.shields.io/badge/ecosystem-topic%20dsh--user--message--timeline-blue" alt="topic"></a>
 </p>
 
@@ -60,7 +60,7 @@
 
 **Prereqs**: DSH installed (`dsh web` works), Node.js ≥ 20.
 
-<a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-0.1.7--rc.2-blue" alt="DSH"></a>
+<a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-≥0.1.7-blue" alt="DSH"></a>
 
 ```sh
 dsh plugin --profile web add dsh-user-message-timeline
