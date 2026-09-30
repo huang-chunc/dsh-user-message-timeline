@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-0.1.7--rc.2-blue" alt="DSH"></a>
+  <a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-≥0.1.7-blue" alt="DSH"></a>
   <a href="https://github.com/topics/dsh-user-message-timeline"><img src="https://img.shields.io/badge/插件生态-topic%20dsh--user--message--timeline-blue" alt="topic"></a>
 </p>
 
@@ -61,7 +61,7 @@
 **前置**：已装好 DSH（`dsh web` 能正常运行），Node.js ≥ 20。
 
 **支持的 DSH 版本**：
-<a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-0.1.7--rc.2-blue" alt="DSH"></a>
+<a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-≥0.1.7-blue" alt="DSH"></a>
 
 ```sh
 dsh plugin --profile web add dsh-user-message-timeline
