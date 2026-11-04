@@ -1,6 +1,6 @@
 {
   "name": "dsh-user-message-timeline",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "DSH User Message Timeline - 对话内悬浮药丸导轨，支持预览、跳转、拖拽与分页",
   "type": "module",
   "main": "lib/index.js",
@@ -35,6 +35,13 @@
     "user-message"
   ],
   "license": "MIT",
+  "engines": {
+    "node": ">=20",
+    "dsh": "^0.1.7-rc.2 || ^0.2.0-rc.1"
+  },
+  "scripts": {
+    "check": "node --check lib/client.js && node --check lib/index.js && npm pack --dry-run"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/huang-chunc/dsh-user-message-timeline"
@@ -47,6 +54,8 @@
     "lib",
     "cordis.patch.yml",
     "README.md",
+    "README_EN.md",
+    "CHANGELOG.md",
     "LICENSE"
   ],
   "peerDependencies": {

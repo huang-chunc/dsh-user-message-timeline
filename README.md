@@ -5,13 +5,12 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/dsh-user-message-timeline"><img src="https://img.shields.io/npm/v/dsh-user-message-timeline?label=npm&color=CB3837" alt="npm"></a>
   <a href="https://www.npmjs.com/package/dsh-user-message-timeline"><img src="https://img.shields.io/npm/dm/dsh-user-message-timeline?label=downloads" alt="downloads"></a>
-  <a href="https://github.com/huang-chunc/dsh-user-message-timeline/actions"><img src="https://img.shields.io/badge/CI-passing-brightgreen" alt="CI"></a>
   <a href="https://github.com/huang-chunc/dsh-user-message-timeline/stargazers"><img src="https://img.shields.io/github/stars/huang-chunc/dsh-user-message-timeline?style=social" alt="Stars"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow" alt="License"></a>
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-≥0.1.7-blue" alt="DSH"></a>
+  <a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-%E2%89%A50.1.7%20%7C%200.2.1-blue" alt="DSH"></a>
   <a href="https://github.com/topics/dsh-user-message-timeline"><img src="https://img.shields.io/badge/插件生态-topic%20dsh--user--message--timeline-blue" alt="topic"></a>
 </p>
 
@@ -30,16 +29,16 @@
 
 | 浅色 | 深色 |
 |---|---|
-| ![浅色截图](docs/screenshot-light.png) | ![深色截图](docs/screenshot-dark.png) |
+| ![浅色截图](https://raw.githubusercontent.com/huang-chunc/dsh-user-message-timeline/main/docs/screenshot-light.png) | ![深色截图](https://raw.githubusercontent.com/huang-chunc/dsh-user-message-timeline/main/docs/screenshot-dark.png) |
 
 | 浅色完整链路 | 深色完整链路 |
 |---|---|
-| ![浅色](docs/light.gif) | ![深色](docs/dark.gif) |
+| ![浅色](https://raw.githubusercontent.com/huang-chunc/dsh-user-message-timeline/main/docs/light.gif) | ![深色](https://raw.githubusercontent.com/huang-chunc/dsh-user-message-timeline/main/docs/dark.gif) |
 | 悬停漏斗放大 → 气泡 240px 预览 → 点击跳转 → 拖拽 Scrub HUD | 同左，深色墨玉玻璃 |
 
 | 设置开关与左右切换 |
 |---|
-| ![设置](docs/settings.gif) |
+| ![设置](https://raw.githubusercontent.com/huang-chunc/dsh-user-message-timeline/main/docs/settings.gif) |
 | 开关关闭隐藏 · 左右贴边（右侧仅适配 dsh-better-sidebar） |
 
 > 动图为 15fps / 128 色压缩预览，完整演示：[浅色](https://www.bilibili.com/video/BV1FR896cEwY?t=9.0) · [深色](https://www.bilibili.com/video/BV1zR896FEY8?t=2.1)（或直接看 `docs/` 下原片）。
@@ -51,17 +50,21 @@
 | 药丸漏斗 | 常态 `12×4`，距 hover/active 分 5 档 `36→26→20→16→12` 放大，`gap 10px` |
 | sticky 预览 | 悬停 150ms/连续 60ms 弹出，墨玉玻璃 `240×48~108`，`clamp 6 行`，可复制 |
 | 拖拽 scrub | `setPointerCapture + elementFromPoint`，Scrub HUD「第X/N轮·预览首行」跟手，松手 smooth 收尾 |
-| 分页头丸加载 | 顶部 `is-older` 空心脉冲，点击循环 `加载更多` 20 次，`HUD/tooltip · 还有更早` |
-| 视口可滚动 | ≤16 颗一屏精致，>16 颗导轨内 `max-height 386px` 可滚，`mask` 淡化 |
+| 未加载轮次 | 空心药丸标识，点击直接 `loadThrough` 原生分页，不依赖手动翻页 |
+| 官方标尺接管 | 默认隐藏官方右侧 `nav[aria-label="轮次导航"]`；关闭后自动避让，不与官方标尺重叠 |
+| 重点轮次 | 前缀/Emoji 自动标记与手动星标，琥珀金微光药丸 + Scrub HUD 星标 |
+| 多模态预览 | 用户图片缩略图（单图通栏/多图三宫格），纯图提问显示 `[图片]` |
+| 时间戳 | `turnTimes` 投影 + DOM 时间双源，悬停气泡显示轮次时间 |
+| 视口可滚动 | ≤16 颗一屏精致，>16 颗导轨内 `max-height 386px` 可滚，`mask` 淡化，active 自动滚入视区 |
 | 丝滑体验 | 侧边栏推式 120fps `ResizeObserver+rAF`，`prefers-reduced-motion` 适配 |
-| 偏好设置 | 侧边栏「插件」→ `dsh-user-message-timeline` 卡片：开关与左右位置，深浅主题自适应（白底黑点/黑底灰点） |
+| 偏好设置 | 侧边栏「插件」→ `dsh-user-message-timeline` 卡片：开关、左右位置、官方标尺接管、重点轮次前缀，深浅主题自适应 |
 
 ## 安装
 
 **前置**：已装好 DSH（`dsh web` 能正常运行），Node.js ≥ 20。
 
 **支持的 DSH 版本**：
-<a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-≥0.1.7-blue" alt="DSH"></a>
+<a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-%E2%89%A50.1.7%20%7C%200.2.1-blue" alt="DSH"></a>
 
 ```sh
 dsh plugin --profile web add dsh-user-message-timeline
