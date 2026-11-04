@@ -5,13 +5,12 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/dsh-user-message-timeline"><img src="https://img.shields.io/npm/v/dsh-user-message-timeline?label=npm&color=CB3837" alt="npm"></a>
   <a href="https://www.npmjs.com/package/dsh-user-message-timeline"><img src="https://img.shields.io/npm/dm/dsh-user-message-timeline?label=downloads" alt="downloads"></a>
-  <a href="https://github.com/huang-chunc/dsh-user-message-timeline/actions"><img src="https://img.shields.io/badge/CI-passing-brightgreen" alt="CI"></a>
   <a href="https://github.com/huang-chunc/dsh-user-message-timeline/stargazers"><img src="https://img.shields.io/github/stars/huang-chunc/dsh-user-message-timeline?style=social" alt="Stars"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow" alt="License"></a>
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-≥0.1.7-blue" alt="DSH"></a>
+  <a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-%E2%89%A50.1.7%20%7C%200.2.1-blue" alt="DSH"></a>
   <a href="https://github.com/topics/dsh-user-message-timeline"><img src="https://img.shields.io/badge/ecosystem-topic%20dsh--user--message--timeline-blue" alt="topic"></a>
 </p>
 
@@ -30,16 +29,16 @@
 
 | Light | Dark |
 |---|---|
-| ![light](docs/screenshot-light.png) | ![dark](docs/screenshot-dark.png) |
+| ![light](https://raw.githubusercontent.com/huang-chunc/dsh-user-message-timeline/main/docs/screenshot-light.png) | ![dark](https://raw.githubusercontent.com/huang-chunc/dsh-user-message-timeline/main/docs/screenshot-dark.png) |
 
 | Light | Dark |
 |---|---|
-| ![light](docs/light.gif) | ![dark](docs/dark.gif) |
+| ![light](https://raw.githubusercontent.com/huang-chunc/dsh-user-message-timeline/main/docs/light.gif) | ![dark](https://raw.githubusercontent.com/huang-chunc/dsh-user-message-timeline/main/docs/dark.gif) |
 | Hover funnel → 240px preview → click jump → scrub HUD | Same, dark with inky glass |
 
 | Settings |
 |---|
-| ![settings](docs/settings.gif) |
+| ![settings](https://raw.githubusercontent.com/huang-chunc/dsh-user-message-timeline/main/docs/settings.gif) |
 | Toggle to hide · left/right (right only adapts to dsh-better-sidebar) |
 
 > GIFs are 15fps / 128-color previews. Full demo: [Light](https://www.bilibili.com/video/BV1FR896cEwY?t=9.0) · [Dark](https://www.bilibili.com/video/BV1zR896FEY8?t=2.1) or raw files in `docs/`.
@@ -51,16 +50,20 @@
 | Pill funnel | Idle `12×4`, 5 levels `36→26→20→16→12` near hover/active, `gap 10px` |
 | Sticky preview | Hover 150ms / continuous 60ms, inky glass `240×48~108`, `clamp 6`, copyable |
 | Drag scrub | `setPointerCapture + elementFromPoint`, HUD follows pointer |
-| Pagination | Top `is-older` pulse, auto-load 20 pages |
-| Viewport scroll | ≤16 in one screen, >16 scrollable `386px` |
+| Unloaded turns | Hollow pills; click uses native `loadThrough` paging |
+| Official rail takeover | Hides official `nav[aria-label="Turn navigation"]` by default and avoids overlap when disabled |
+| Milestone turns | Prefix/emoji auto-mark and manual star, amber glow |
+| Image preview | User image thumbnails (single/multi), `[image]` for image-only prompts |
+| Timestamps | `turnTimes` projection + DOM fallback in the hover card |
+| Viewport scroll | ≤16 in one screen, >16 scrollable `386px`, active pill kept in view |
 | Silky | 120fps push via `ResizeObserver+rAF` |
-| Preferences | Sidebar "Plugins" → `dsh-user-message-timeline` card |
+| Preferences | Sidebar "Plugins" → `dsh-user-message-timeline` card: enable, left/right, takeover, milestone prefixes |
 
 ## Install
 
 **Prereqs**: DSH installed (`dsh web` works), Node.js ≥ 20.
 
-<a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-≥0.1.7-blue" alt="DSH"></a>
+<a href="https://www.npmjs.com/package/@deepseek-ai/dsh?activeTab=versions"><img src="https://img.shields.io/badge/DSH-%E2%89%A50.1.7%20%7C%200.2.1-blue" alt="DSH"></a>
 
 ```sh
 dsh plugin --profile web add dsh-user-message-timeline
