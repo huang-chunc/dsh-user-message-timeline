@@ -4,7 +4,7 @@
   "description": "对话内悬浮药丸导轨：等距药丸、悬停预览、点击/拖拽跳转、分页自动加载、重点轮次标记，开关在侧边栏「插件」卡片内",
   "repo": "https://github.com/huang-chunc/dsh-user-message-timeline",
   "npm": "dsh-user-message-timeline",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "keywords": [
     "timeline",
     "user-message",
